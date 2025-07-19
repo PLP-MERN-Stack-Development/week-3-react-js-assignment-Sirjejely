@@ -1,9 +1,18 @@
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import TaskManager from './pages/TaskManager';
+import ApiPage from './pages/ApiPage';
+import MainLayout from './layouts/MainLayout';
+
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-800">
-      <h1 className="text-4xl font-bold text-blue-600">✅ Tailwind is Working!</h1>
-      <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">Let's move to Task 2.</p>
-    </div>
+    <MainLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tasks" element={<TaskManager />} />
+        <Route path="/api" element={<ApiPage />} />
+      </Routes>
+    </MainLayout>
   );
 }
 
