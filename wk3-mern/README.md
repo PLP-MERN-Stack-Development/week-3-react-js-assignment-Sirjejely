@@ -56,7 +56,7 @@ npm run build
 ## Deployment
 You can deploy this app to Vercel, Netlify, or GitHub Pages. After deployment, add your live URL below:
 
-**Live Demo:** [https://your-deployed-url.com](https://your-deployed-url.com)
+**Live Demo:** [https://candid-heliotrope-d56ce0.netlify.app/](https://candid-heliotrope-d56ce0.netlify.app/)
 
 ## Folder Structure
 ```
